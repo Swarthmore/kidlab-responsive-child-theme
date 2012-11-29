@@ -1,0 +1,134 @@
+/*
+Theme Name:     KidLab
+Theme URI:      http://www.swarthmore.com/
+Description:    Child theme for the Responsive theme 
+Author:         MK, based on work by Emil Uzelac
+Author URI:     http://www.swarthmore.edu
+
+License: GNU General Public License
+
+Template:       responsive
+Version:        0.1.0
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+*/
+
+@import url("../responsive/style.css");
+
+h1, h2, h3, h4, h5, .site-description, .menu, a.button {
+	font-family: 'Comfortaa', cursive;
+}
+
+.textwidget h1 {
+	margin: 0 0 .5em;
+}
+#header{
+	background-image:url('imgs/College-Logo-Garnet-sm.png');
+	background-repeat:no-repeat;
+	background-position:right 20px;
+	}
+.site-name {
+font-family: 'Comfortaa', cursive;
+font-size:3em;
+line-height:normal;
+text-shadow: 1px 1px 5px rgba(150, 150, 150, 0.6);
+}
+.site-description {
+	font-size:2em;
+	line-height:normal;
+	color:#A3141B;
+	text-shadow: 0px 1px 3px rgba(150, 150, 150, 0.8);}
+
+a{
+color:#A3141B;}
+
+a:hover{
+	color:#631919;}
+	
+.menu {
+	background:none;
+	background-image:none;
+	margin-top:10px;
+}
+
+.menu li {
+	margin-top: 5px;
+	margin-right:20px;
+}
+
+.menu li a{
+	background:#333;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 3px solid #FFF;
+	font-size:16px;
+	}
+.menu li a:hover{
+	background:#666;
+}
+	
+.home .menu .current_page_item a, .menu .current_page_item a{
+	background:#666;
+	border: 3px solid #FFF;
+
+}
+.children{}
+.menu li li{border:0px;}
+.menu li li a{
+	background:#efefef !important;
+	border:3px solid #FFF;}
+
+a.blue{
+	background:#88C1C4;
+}
+
+a:hover.blue {
+	background:#88C1C4;}
+
+a.button, a:hover.button {
+		-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:0px;}
+
+.post-title {
+	color:#404040;
+	}
+.featured-title {
+	font-size:25px;
+	}
+.featured-subtitle{
+display:none;}
+
+#featured p {
+font-size: 13px;
+}
+
+.widget-wrapper, #featured{
+		-webkit-box-shadow: 1px 1px 10px rgba(50, 50, 50, 0.1);
+		-moz-box-shadow:    1px 1px 10px rgba(50, 50, 50, 0.1);
+		box-shadow:         1px 1px 10px rgba(50, 50, 50, 0.1);}
+.menu li a, a.button, .menu li .children{
+		-webkit-box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.1);
+		-moz-box-shadow:    1px 1px 5px rgba(50, 50, 50, 0.1);
+		box-shadow:         1px 1px 5px rgba(50, 50, 50, 0.1);}
+.ss-form-container{
+width:50%;
+}
+@media screen and (max-width: 920px) {
+#header{
+	background-image:none;}
+}
