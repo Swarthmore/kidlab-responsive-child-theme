@@ -27,8 +27,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 @import url("../responsive/style.css");
 
-h1, h2, h3, h4, h5, .site-description, .menu, a.button {
+h1, h2, h3, h4, h5, .site-description, .menu, a.button, .widget-title {
 	font-family: 'Comfortaa', cursive;
+}
+.widget-title{
+		color:#A3141B;
 }
 
 .textwidget h1 {
@@ -79,6 +82,10 @@ a:hover{
 .menu li a:hover{
 	background:#666;
 }
+
+.menu > li:first-child > a {
+	border: 3px solid #FFF;
+}
 	
 .home .menu .current_page_item a, .menu .current_page_item a{
 	background:#666;
@@ -93,10 +100,17 @@ a:hover{
 
 a.blue{
 	background:#88C1C4;
-}
+	-webkit-box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    1px 1px 5px rgba(50, 50, 50, 0.3);
+	box-shadow:         1px 1px 5px rgba(50, 50, 50, 0.3);
+	}
+
 
 a:hover.blue {
-	background:#88C1C4;}
+	background:#88C1C4;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;}
 
 a.button, a:hover.button {
 		-webkit-border-radius: 5px;
@@ -121,10 +135,11 @@ font-size: 13px;
 		-webkit-box-shadow: 1px 1px 10px rgba(50, 50, 50, 0.1);
 		-moz-box-shadow:    1px 1px 10px rgba(50, 50, 50, 0.1);
 		box-shadow:         1px 1px 10px rgba(50, 50, 50, 0.1);}
-.menu li a, a.button, .menu li .children{
+.menu li a, .menu li .children{
 		-webkit-box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.1);
 		-moz-box-shadow:    1px 1px 5px rgba(50, 50, 50, 0.1);
 		box-shadow:         1px 1px 5px rgba(50, 50, 50, 0.1);}
+
 .ss-form-container{
 width:50%;
 }
